@@ -21,7 +21,6 @@ class Weather {
     if (identical(this, other)) return true;
 
     return other is Weather &&
-        //other.timezone == timezone &&
         other.temperature == temperature &&
         other.condition == condition;
   }

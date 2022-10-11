@@ -129,9 +129,8 @@ class _HomeViewState extends State<HomeView> {
                               child: Transform.scale(
                                 scale: 1.5,
                                 child: Image.asset(
-                                    'assets/images/${widget.weather.condition}.png'),
-                                //["Rain","Snow","Clouds","Extreme","Clear"]
-                                //['clear_night','windy',"cloudy_day","rain","thunderstorm"]
+                                  'assets/images/${widget.weather.condition}.png',
+                                ),
                               ),
                             ),
                             Positioned(
@@ -204,19 +203,6 @@ class _HomeViewState extends State<HomeView> {
                   ),
                 ],
               )
-              //   } else if (snapshot.hasError) {
-              //     return const ScaffoldMessenger(
-              //         child: SnackBar(
-              //             content: Text("Error Occured, try again ")));
-              //   } else if (snapshot.connectionState ==
-              //       ConnectionState.waiting) {
-              //     return const Center(
-              //       child: CircularProgressIndicator(),
-              //     );
-              //   } else {
-              //     return const Center();
-              //   }
-              // }),
             ],
           ),
         ),
